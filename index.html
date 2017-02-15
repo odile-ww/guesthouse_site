@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Casa Vesela | Guesthouse</title>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+  crossorigin="anonymous">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Lato" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1"
+  crossorigin="anonymous">
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  <link rel="stylesheet" href="custom.css">
+</head>
+
+<body class="main">
+  <!-- Page header -->
+    <header class="row">
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+          aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand pull-left" href="index.html">Casa<span>Vesela</span></a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav pull-right text-uppercase">
+            <li><a href="about.html">About</a>
+            </li>
+            </li>
+            <li><a href="book.html">Book</a>
+            </li>
+            <li><a href="gallery.html">Gallery</a>
+            </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+  </header><!-- /header -->
+
+  <!-- Background video -->
+  <div class="background-video">
+    <video id="bg-vid" preload="auto" autoplay loop muted>
+      <source src="gregorylathamsafranmp4.mp4" type="video/mp4" />
+      <!-- Author: gregory latham -- Author webpage: https://vimeo.com/greglatham 
+Licence: ATTRIBUTION LICENSE 3.0 http://creativecommons.org/licenses/by/3.0/us/)
+Downloaded at Mazwai.com -->
+    </video>
+  </div>
+  
+  <!-- Text over the background video -->
+  <main class="content">
+    <!-- Welcome message -->
+    <section class="row welcome-message">
+      <h1 class="text-uppercase">Bine Ati Venit! | Welcome!</h1>
+      <p class="text-uppercase subheading">Get ready to relax and recharge in a corner of heaven</p>
+    </section> <!-- / end of welcome message -->
+    <!-- Quick-access booking form -->
+    <form action="book.html" class="form-inline" method="GET">
+      <div class="form-group">
+        <label for="checkInDate" class="text-uppercase">Check-In</label>
+        <input type="date" name="checkInDate" class="form-control" id="checkInDate">
+      </div>
+      <div class="form-group">
+        <label for="checkOutDate" class="text-uppercase">Check-Out</label>
+        <input type="date" name="checkOutDate" class="form-control" id="checkOutDate">
+      </div>
+      <button type="submit" name="submit" class="btn btn-default">Book Now!</button>
+    </form> <!-- / end of quick-access form -->
+    <!-- Social icons, contact info and copyrigth -- replaces footer from the other pages due to design-->
+    <section id="contactAndSocial">
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-xs-12 social-icons">
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="row contacts">
+        <div class="col-lg-4 col-md-4 col-xs-12">
+          <i class="fa fa-map-marker"></i>
+          <p><span>5 Sunshine and Smiles,</span> Always Happy, Romania</p>
+        </div>
+        <div class="col-lg-4 col-md-4 col-xs-12">
+          <i class="fa fa-phone"></i>
+          <p>+40 757 575 575</p>
+        </div>
+        <div class="col-lg-4 col-md-4 col-xs-12">
+          <i class="fa fa-envelope"></i>
+          <p><a href="mailto:support@company.com">support@casavesela.com</a>
+          </p>
+        </div>
+      </div>
+      <p class="text-center copyright">
+        &copy; Silvia Velicu, 2016 - made for educational purposes || Video from Mazwai.com &#8210; Author: Gregory Latham || Pictures from Pixabay.com
+      </p>
+    </section><!-- /end of contact data -->
+  </main><!--/end of content -->
+
+  <!-- jQuery and Bootrstap jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Casa Vesela | Guesthouse</title>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+  crossorigin="anonymous">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Lato" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1"
+  crossorigin="anonymous">
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  <link rel="stylesheet" href="custom.css">
+
+  <!-- jQuery and Bootrstap jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+
+<body class="book">
+
+    <header class="row">
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+          aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand pull-left" href="index.html">Casa<span>Vesela</span></a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav pull-right text-uppercase">
+            <li><a href="about.html">About</a>
+            </li>
+            </li>
+            <li class="active"><a href="book.html">Book</a>
+            </li>
+            <li><a href="gallery.html">Gallery</a>
+            </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+  </header><!-- /header -->
+
+  <main class="reservations container">
+    <h1 class="text-center text-uppercase">Book Your Stay with Us!</h1>
+    <form role="form" action="submit.html" name="book">
+      <fieldset>
+        <!-- Series of form groups for personal details -->
+        <div class="form-group">
+        <label for="checkInDate" class="col-lg-2 col-md-2 col-xs-12 heading">Check-In *</label>
+        <div class="col-lg-10 col-md-10 col-xs-12">
+          <input type="date" class="form-control" id="checkInDate" name="checkIn" required>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="checkOutDate" class="col-lg-2 col-md-2 col-xs-12 heading">Check-Out *</label>
+        <div class="col-lg-10 col-md-10 col-xs-12">
+          <input type="date" class="form-control" id="checkOutDate" name="checkOut" required>
+        </div>
+      </div>
+        <div class="form-group">
+          <label for="name" class="col-lg-2 col-md-2 col-xs-12 heading">Your name *</label>
+          <div class="col-lg-10 col-md-10 col-xs-12">
+            <input type="text" name="name" id="name" class="form-control" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="address" class="col-lg-2 col-md-2 col-xs-12 heading">Your address</label>
+          <div class="col-lg-10 col-md-10 col-xs-12">
+            <input type="text" name="address" class="form-control">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="contact" class="col-lg-2 col-md-2 col-xs-12 heading">Contact Details *</label>
+          <div class="col-lg-5 col-md-5 col-xs-12">
+            <input type="text" name="email" class="form-control" placeholder="E-mail" id="clientEmail" required>
+          </div>
+          <div class="col-lg-5 col-md-5 col-xs-12">
+            <input type="number" name="phone" class="form-control" placeholder="Mobile Number" required>
+          </div>
+        </div> <!-- /end of area for personal details -->
+        <!-- Dropdown selection area for nb. of rooms, nb. of adults, nb. of children -->
+        <div class="row">
+          <div class="col-lg-4 col-md-4 col-xs-12">
+            <div class="form-group">
+              <label>Rooms</label>
+              <select name="rooms" size="1">
+                <option value="1" selected>1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-xs-12">
+            <div class="form-group">
+              <label>Adults</label>
+              <select name="adults" size="1">
+                <option value="1">1</option>
+                <option value="2" selected>2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-xs-12">
+            <div class="form-group">
+              <label>Children</label>
+              <select name="children" size="1">
+                <option value="0" selected>0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+              </select>
+            </div>
+          </div>
+        </div><!-- /end of dropdown selection area -->
+        <!-- Group of radio buttons for choice of accomodation type -->
+        <div class="form-group">
+          <label class="control-label heading">Accomodation type</label>
+          <div class="radio">
+            <label>
+              <input type="radio" name="roomtype" value="single"> Single
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="roomtype" value="double"> Double
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="roomtype" value="twin"> Twin
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="roomtype" value="suite"> Suite
+            </label>
+          </div>
+        </div> <!-- /end of radio buttons selection area -->
+        <!-- Group of checkboxes for additional services -->
+        <div class="form-group">
+          <label class="heading">Other services</label>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="transfer">Airport / Train Station Transfer</label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="dinner">Dinner Supplement<sup>1</sup>
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="extra-bed">Extra-bed - child<sup>2</sup>
+            </label>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" value="extra-bed">Extra-bed - adult<sup>3</sup>
+              </label>
+            </div>
+          </div> <!-- /end of additional services selection area-->
+          <!-- Free text area -->
+          <label for="comments" class="control-label heading">Comments:</label>
+          <textarea name="comments" class="form-control" rows="3" data-toggle="tooltip" title="We welcome your feedback"
+          data-placement="botom"></textarea>
+        </div> <!-- /end of free text area -->
+        <!-- Submit button -->
+        <div class="form-group">
+          <button type="submit" class="btn">Submit</button>
+        </div> <!-- / submit button -->
+      </fieldset>
+    </form>
+    <hr>
+    <div class="row footnotes">
+      <p><sup>*</sup>Required field</p>
+      <p><sup>1</sup>Dinner supplement: 10 EUR / night / person</p>
+      <p><sup>2</sup>Extra-bed - child: for children up to 10 years old, no extra charges; for children between 11
+        and 14: 7 EUR / night</p>
+      <p><sup>3</sup>Extra-bed - adult: 15 EUR / night. Available only in the Blue room!</p>
+    </div>
+  </main>
+
+  <!--Page Footer -->
+  <footer class="container-fluid footer">
+    <div class="row">
+      <div class="col-lg-4 col-md-4 col-xs-12 footer-left">
+        <h3>Casa<span>Vesela</span></h3>
+        <p class="footer-links">
+          <a href="index.html">Home</a>
+          <i class="fa fa-leaf" aria-hidden="true"></i>
+          <a href="about.html">About</a>
+          <i class="fa fa-leaf" aria-hidden="true"></i>
+          <a href="comingsoon.html">Services</a>
+          <i class="fa fa-leaf" aria-hidden="true"></i>
+          <a href="book.html">Book</a>
+          <i class="fa fa-leaf" aria-hidden="true"></i>
+          <a href="gallery.html">Gallery</a>
+        </p>
+        <p class="footer-company-name">&copy; Silvia Velicu, 2016 - made for educational purposes || Video from Mazwai.com &#8210; Author: Gregory Latham || Pictures from Pixabay.com</p>
+      </div>
+      <div class="col-lg-4 col-md-4 col-xs-12 footer-middle">
+        <div>
+          <i class="fa fa-map-marker"></i>
+          <p><span>5 Sunshine and Smiles,</span> Always Happy, Romania</p>
+        </div>
+        <div>
+          <i class="fa fa-phone"></i>
+          <p>+40 757 575 575</p>
+        </div>
+        <div>
+          <i class="fa fa-envelope"></i>
+          <p><a href="mailto:support@company.com">support@casavesela.com</a>
+          </p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-4 col-xs-12 footer-right">
+        <p class="footer-company-about">
+          <span>About Casa Vesela</span> Casa Vesela is a fictitious establishment created for learning purposes.
+        </p>
+        <div class="footer-icons">
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer><!-- end of footer -->
+  <!-- jQuery, Bootrstap jQuery & jQuery Validation plugin -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+
+  <script>
+    $(function() {
+      //TO DO: Check if the check-in & check-out dates have been filled in from the front page
+
+      // Initialize form validation on the registration form.
+      // It has the name attribute "registration"
+      $("form[name='book']").validate({
+        // Specify validation rules
+        rules: {
+          checkIn: "required",
+          checkOut: "required",
+          name: "required",
+          lastname: "required",
+          email: {
+            required: true,
+            // Specify that email should be validated
+            // by the built-in "email" rule
+            email: true
+          },
+          phone: {
+            required: true,
+            digits: true,
+            minlength: 9
+          }
+        },
+        // Specify validation error messages
+        messages: {
+          checkIn: "Please indicate your desired check-in date",
+          checkOut: "Please indicate your desired check-out date",
+          name: "Please enter your name",
+          lastname: "Please enter your lastname",
+          phone: {
+            required: "Please provide a digits-only phone number",
+          },
+          email: "Please enter a valid email address"
+        },
+        // Make sure the form is submitted to the destination defined
+        // in the "action" attribute of the form when valid
+        submitHandler: function(form) {
+          form.submit();
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>

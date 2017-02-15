@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Casa Vesela | Guesthouse</title>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+  crossorigin="anonymous">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Lato" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1"
+  crossorigin="anonymous">
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  <!-- My custom styles -->
+  <link rel="stylesheet" href="custom.css">
+  <!-- jQuery and Bootrstap jQuery -->
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+  <!-- The gallery uses the Isotope plugin to filter the pictures by categories & Bootstrap modal windows to display larger pictures & more info about each one -->
+  <script src="https://npmcdn.com/isotope-layout@3.0/dist/isotope.pkgd.min.js"></script>
+</head>
+
+<body class="gallery">
+  <!-- Page header -->
+    <header class="row">
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+          aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand pull-left" href="index.html">Casa<span>Vesela</span></a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav pull-right text-uppercase">
+            <li><a href="about.html">About</a>
+            </li>
+            </li>
+            <li><a href="book.html">Book</a>
+            </li>
+            <li class="active"><a href="gallery.html">Gallery</a>
+            </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+  </header><!-- /header -->
+
+  <!-- Page content -->
+  <main class="container">
+    <h1 class="text-center text-uppercase">Gallery</h1>
+    <!-- Filter menu -->
+    <section class="galleryFilter">
+      <button href="#" class="btn isActive" data-filter="*">All</button>
+      <button href="#" class="btn" data-filter=".outdoors">Outdoors</button>
+      <button href="#" class="btn" data-filter=".rooms">Rooms</li>
+      </button>
+      <button href="#" class="btn" data-filter=".activities">Activities</li>
+      </button>
+      <button href="#" class="btn" data-filter=".dining">Dining</li>
+        </butoon>
+    </section> <!-- /end of filter menu -->
+    <!-- Pictures grid -->
+    <section id="pictures">
+      <div class="item dining col-lg-3 col-md-3 col-xs-12">
+        <img src="img/appetizer_thumb.jpg" alt="appetizer" class="img-responsive img-thumbnail" data-toggle="modal" data-target="#appetizer">
+      </div>
+      <div class="item dining col-lg-3 col-md-3 col-xs-12">
+        <img src="img/breakfast_thumb.jpg" alt="breakfast" class="img-responsive img-thumbnail" data-toggle="modal" data-target="#breakfast">
+      </div>
+      <div class="item activities col-lg-3 col-md-3 col-xs-12">
+        <img src="img/chicken_thumb.jpg" alt="chicken on palms" class="img-responsive img-thumbnail" data-toggle="modal"
+        data-target="#chicken">
+      </div>
+      <div class="item dining col-lg-3 col-md-3 col-xs-12">
+        <img src="img/centerpiece_thumb.jpg" alt="centerpiece on a dining table" class="img-responsive img-thumbnail" data-toggle="modal"
+        data-target="#centerpiece">
+      </div>
+      <div class="item activities col-lg-3 col-md-3 col-xs-12">
+        <img src="img/cherries_thumb.jpg" alt="cherries and cherries jam" class="img-responsive img-thumbnail" data-toggle="modal"
+        data-target="#cherries">
+      </div>
+      <div class="item activities col-lg-3 col-md-3 col-xs-12">
+        <img src="img/corn_thumb.jpg" alt="corn and pumpkins" class="img-responsive img-thumbnail" data-toggle="modal"
+        data-target="#corn">
+      </div>
+      <div class="item activities dining col-lg-3 col-md-3 col-xs-12">
+        <img src="img/eggs_thumb.jpg" alt="eggs" class="img-responsive img-thumbnail" data-toggle="modal" data-target="#eggs">
+      </div>
+      <div class="item outdoors col-lg-3 col-md-3 col-xs-12">
+        <img src="img/farmhouse_thumb.jpg" alt="shed" class="img-responsive img-thumbnail" data-toggle="modal" data-target="#farmhouse">
+      </div>
+      <div class="item outdoors col-lg-3 col-md-3 col-xs-12">
+        <img src="img/fence_thumb.jpg" alt="fence" class="img-responsive img-thumbnail" data-toggle="modal" data-target="#fence">
+      </div>
+      <div class="item activities outdoors col-lg-3 col-md-3 col-xs-12">
+        <img src="img/grapes_thumb.jpg" alt="purple grapes" class="img-responsive img-thumbnail" data-toggle="modal" data-target="#grapes">
+      </div>
+      <div class="item activities outdoors col-lg-3 col-md-3 col-xs-12">
+        <img src="img/harvest-produce_thumb.jpg" alt="harvest produce" class="img-responsive img-thumbnail" data-toggle="modal"
+        data-target="#harvestProduce">
+      </div>
+      <div class="item outdoors col-lg-3 col-md-3 col-xs-12">
+        <img src="img/house_thumb.jpg" alt="casa vesela" class="img-responsive img-thumbnail" data-toggle="modal" data-target="#house">
+      </div>
+      <div class="item activities col-lg-3 col-md-3 col-xs-12">
+        <img src="img/painted-eggs_thumb.jpg" alt="painted eggs" class="img-responsive img-thumbnail" data-toggle="modal"
+        data-target="#paintedEggs">
+      </div>
+      <div class="item dining outdoors col-lg-3 col-md-3 col-xs-12">
+        <img src="img/outdoor-table_thumb.jpg" alt="outdoor dining tables" class="img-responsive img-thumbnail" data-toggle="modal"
+        data-target="#outdoorTable">
+      </div>
+      <div class="item activities outdoors col-lg-3 col-md-3 col-xs-12">
+        <img src="img/picnic_thumb.jpg" alt="picnic set" class="img-responsive img-thumbnail" data-toggle="modal" data-target="#picnic">
+      </div>
+      <div class="item dining activities col-lg-3 col-md-3 col-xs-12">
+        <img src="img/red-wine_thumb.jpg" alt="red wine degustation" class="img-responsive img-thumbnail" data-toggle="modal"
+        data-target="#redWine">
+      </div>
+      <div class="item rooms col-lg-3 col-md-3 col-xs-12">
+        <img src="img/rooms-tamara_thumb.jpg" alt="room tamara" class="img-responsive img-thumbnail" data-toggle="modal"
+        data-target="#tamara">
+      </div>
+      <div class="item rooms col-lg-3 col-md-3 col-xs-12">
+        <img src="img/rooms-vera_thumb.jpg" alt="room vera" class="img-responsive img-thumbnail" data-toggle="modal" data-target="#vera">
+      </div>
+      <div class="item rooms col-lg-3 col-md-3 col-xs-12">
+        <img src="img/rooms-anica_thumb.jpg" alt="suite anica" class="img-responsive img-thumbnail" data-toggle="modal"
+        data-target="#anica">
+      </div>
+      <div class="item rooms col-lg-3 col-md-3 col-xs-12">
+        <img src="img/rooms-alexandra_thumb.jpg" alt="room alexandra" class="img-responsive img-thumbnail" data-toggle="modal"
+        data-target="#alexandra">
+      </div>
+      <div class="item activities outdoors col-lg-3 col-md-3 col-xs-12">
+        <img src="img/rooster_thumb.jpg" alt="rooster and hen" class="img-responsive img-thumbnail" data-toggle="modal"
+        data-target="#rooster">
+      </div>
+      <div class="item dining outdoors col-lg-3 col-md-3 col-xs-12">
+        <img src="img/screened-porch_thumb.jpg" alt="screened porch" class="img-responsive img-thumbnail" data-toggle="modal"
+        data-target="#porch">
+      </div>
+      <div class="item activities dining col-lg-3 col-md-3 col-xs-12">
+        <img src="img/vegetables_thumb.jpg" alt="vegetables in a basket" class="img-responsive img-thumbnail" data-toggle="modal"
+        data-target="#vegetables">
+      </div>
+      <div class="item outdoors col-lg-3 col-md-3 col-xs-12">
+        <img src="img/wagon-wheel_thumb.jpg" alt="wagon wheel" class="img-responsive img-thumbnail" data-toggle="modal"
+        data-target="#wheel">
+      </div>
+    </section> <!-- / end of the picture grid -->
+  </main><!-- / end of page content -->
+
+  <!--Page Footer -->
+  <footer class="container-fluid footer">
+    <div class="row">
+      <div class="col-lg-4 col-md-4 col-xs-12 footer-left">
+        <h3>Casa<span>Vesela</span></h3>
+        <p class="footer-links">
+          <a href="index.html">Home</a>
+          <i class="fa fa-leaf" aria-hidden="true"></i>
+          <a href="about.html">About</a>
+          <i class="fa fa-leaf" aria-hidden="true"></i>
+          <a href="comingsoon.html">Services</a>
+          <i class="fa fa-leaf" aria-hidden="true"></i>
+          <a href="book.html">Book</a>
+          <i class="fa fa-leaf" aria-hidden="true"></i>
+          <a href="gallery.html">Gallery</a>
+        </p>
+        <p class="footer-company-name">&copy; Silvia Velicu, 2016 - made for educational purposes || Video from Mazwai.com &#8210; Author: Gregory Latham || Pictures from Pixabay.com</p>
+      </div>
+      <div class="col-lg-4 col-md-4 col-xs-12 footer-middle">
+        <div>
+          <i class="fa fa-map-marker"></i>
+          <p><span>5 Sunshine and Smiles,</span> Always Happy, Romania</p>
+        </div>
+        <div>
+          <i class="fa fa-phone"></i>
+          <p>+40 757 575 575</p>
+        </div>
+        <div>
+          <i class="fa fa-envelope"></i>
+          <p><a href="mailto:support@company.com">support@casavesela.com</a>
+          </p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-4 col-xs-12 footer-right">
+        <p class="footer-company-about">
+          <span>About Casa Vesela</span> Casa Vesela is a fictitious establishment created for learning purposes.
+        </p>
+        <div class="footer-icons">
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer><!-- end of footer -->
+
+  <!-- Modal windows for the pictures gallery -->
+  <!-- Modal window for the first picture -->
+  <div class="modal fade" id="appetizer" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <!-- The users have two closing buttons, so that they don't have to scroll to the bottom of the page, on larger screens -->
+          <button type="button" class="close glyphicon glyphicon-remove" data-dismiss="modal"></button>
+          <h4 class="modal-title">Appetizer</h4>
+        </div>
+        <div class="modal-body">
+          <img class="img-responsive" src="img/appetizer.jpg" alt="appetizer">
+          <p>Our restaurant offers you a wide variety of traditional Romanian dishes, as well as staples of the International
+            cuisine.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div><!-- /first picture -->
+  <!-- Modal window for the second picture -->
+  <div class="modal fade" id="breakfast" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close glyphicon glyphicon-remove" data-dismiss="modal"></button>
+          <h4 class="modal-title">Breakfast</h4>
+        </div>
+        <div class="modal-body">
+          <img class="img-responsive" src="img/breakfast.jpg" alt="breakfast">
+          <p>Pastries and freshly squeezed fruit juice are among our guests' favorite breakfast items.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div><!-- /second picture -->
+  <!-- Modal window for the third picture -->
+  <div class="modal fade" id="chicken" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close glyphicon glyphicon-remove" data-dismiss="modal"></button>
+          <h4 class="modal-title">Tending the chicken</h4>
+        </div>
+        <div class="modal-body">
+          <img class="img-responsive" src="img/chicken.jpg" alt="chicken on palms">
+          <p>If you visit our guesthouse in the spring or early summer, you'll have the opportunity to enjoy the company
+            of our smallest farm inhabitants. Always a favorite with children!</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div><!-- /third picture -->
+  <!-- Modal window for the fourth picture -->
+  <div class="modal fade" id="centerpiece" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close glyphicon glyphicon-remove" data-dismiss="modal"></button>
+          <h4 class="modal-title">Centerpiece on a Dining Table</h4>
+        </div>
+        <div class="modal-body">
+          <img class="img-responsive" src="img/centerpiece.jpg" alt="centerpiece on a dining table">
+          <p>The beautiful flowers from our garden make for great centerpieces!</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div><!-- /fourth picture -->
+  <!-- Modal window for the fifth picture -->
+  <div class="modal fade" id="cherries" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close glyphicon glyphicon-remove" data-dismiss="modal"></button>
+          <h4 class="modal-title">Cherries</h4>
+        </div>
+        <div class="modal-body">
+          <img class="img-responsive" src="img/cherries.jpg" alt="cherries">
+          <p>Our guests can partake in activities such as fruits picking and preparation of traditional jams and preserves.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div><!-- /fifth picture -->
+  <!-- Modal window for the sixth picture -->
+  <div class="modal fade" id="corn" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close glyphicon glyphicon-remove" data-dismiss="modal"></button>
+          <h4 class="modal-title">Harvest: Corn &amp; Pumkins</h4>
+        </div>
+        <div class="modal-body">
+          <img class="img-responsive" src="img/corn.jpg" alt="corn and pumpkins">
+          <p>Corn and pumpkins are an important part of the nutrition of both people and animals on the farm, especially
+            in the colder months of late autum and winter.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div><!-- /sixth picture -->
+  <!-- Modal window for the seventh picture -->
+  <div class="modal fade" id="eggs" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close glyphicon glyphicon-remove" data-dismiss="modal"></button>
+          <h4 class="modal-title">Fresh Eggs</h4>
+        </div>
+        <div class="modal-body">
+          <img class="img-responsive" src="img/eggs.jpg" alt="eggs">
+          <p>The eggs we use in our kitchen are always fresh and ethically sourced. They are also an important component
+            in our cooking workshops!</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div><!-- /seventh picture -->
+  <!-- Modal window for the eigth picture -->
+  <div class="modal fade" id="farmhouse" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close glyphicon glyphicon-remove" data-dismiss="modal"></button>
+          <h4 class="modal-title">Shed</h4>
+        </div>
+        <div class="modal-body">
+          <img class="img-responsive" src="img/farmhouse.jpg" alt="shed">
+          <p>Who sais that a functional building cannot benefit from a little make-up? Nothing a few pots of flowers
+            can't improve!</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div><!-- /eigth picture -->
+  <!-- Modal window for the ninth picture -->
+  <div class="modal fade" id="fence" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close glyphicon glyphicon-remove" data-dismiss="modal"></button>
+          <h4 class="modal-title">Fence</h4>
+        </div>
+        <div class="modal-body">
+          <img class="img-responsive" src="img/fence.jpg" alt="fence">
+          <p>A glimpse of our idyllic surroundings</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div><!-- /ninth picture -->
+  <!-- Modal window for the tenth picture -->
+  <div class="modal fade" id="grapes" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close glyphicon glyphicon-remove" data-dismiss="modal"></button>
+          <h4 class="modal-title">Grapes</h4>
+        </div>
+        <div class="modal-body">
+          <img class="img-responsive" src="img/grapes.jpg" alt="purple grapes">
+          <p>Our region is well renowned for its vines and our farm is no exception.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div><!-- /tenth picture -->
+  <!-- Modal window for the eleventh picture -->
+  <div class="modal fade" id="harvestProduce" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close glyphicon glyphicon-remove" data-dismiss="modal"></button>
+          <h4 class="modal-title">Decoration for the Harvest Celebration</h4>
+        </div>
+        <div class="modal-body">
+          <img class="img-responsive" src="img/harvest-produce.jpg" alt="harvest produce">
+          <p>A bountiful harvest is always a reason for celebration.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div><!-- / eleventh picture -->
+  <!-- Modal window for the twelfth picture -->
+  <div class="modal fade" id="house" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close glyphicon glyphicon-remove" data-dismiss="modal"></button>
+          <h4 class="modal-title">Casa Vesela</h4>
+        </div>
+        <div class="modal-body">
+          <img class="img-responsive" src="img/house.jpg" alt="casa vesela">
+          <p>Our charming house welcomes you all year around.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div><!-- /twelfth picture -->
+  <!-- Modal window for the thirteenth picture -->
+  <div class="modal fade" id="paintedEggs" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close glyphicon glyphicon-remove" data-dismiss="modal"></button>
+          <h4 class="modal-title">Painted Eggs</h4>
+        </div>
+        <div class="modal-body">
+          <img class="img-responsive" src="img/painted-eggs.jpg" alt="painted eggs">
+          <p>Painting and decorating eggs for Easter is a centuries-old tradition in Romania that we still honor nowadays.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div><!-- /thirteenth picture -->
+  <!-- Modal window for the fourtheenth picture -->
+  <div class="modal fade" id="outdoorTable" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close glyphicon glyphicon-remove" data-dismiss="modal"></button>
+          <h4 class="modal-title">Outdoor Tables</h4>
+        </div>
+        <div class="modal-body">
+          <img class="img-responsive" src="img/outdoor-table.jpg" alt="outdoor dining tables">
+          <p>The outdoor dining capacity of the guesthouse can expand up to 30 people.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div><!-- /fourtheenth picture -->
+  <!-- Modal window for the fifteenth picture -->
+  <div class="modal fade" id="picnic" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close glyphicon glyphicon-remove" data-dismiss="modal"></button>
+          <h4 class="modal-title">Picnic</h4>
+        </div>
+        <div class="modal-body">
+          <img class="img-responsive" src="img/picnic.jpg" alt="picnic set">
+          <p>With such beautiful surroundings it's no wonder that picnics are a favorite activities among our guests,
+            during the warm months.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div><!-- /fifteenth picture -->
+  <!-- Modal window for the sixteenth picture -->
+  <div class="modal fade" id="redWine" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close glyphicon glyphicon-remove" data-dismiss="modal"></button>
+          <h4 class="modal-title">Wine Degustations</h4>
+        </div>
+        <div class="modal-body">
+          <img class="img-responsive" src="img/red-wine.jpg" alt="red wine degustation">
+          <p>We offer a large selection of wines for degustation.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div><!-- /sixteenth picture -->
+  <!-- Modal window for the seventeenth picture -->
+  <div class="modal fade" id="tamara" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close glyphicon glyphicon-remove" data-dismiss="modal"></button>
+          <h4 class="modal-title">Room Tamara</h4>
+        </div>
+        <div class="modal-body">
+          <img class="img-responsive" src="img/rooms-tamara.jpg" alt="room tamara">
+          <p>Each of our rooms carries a grandmother's name.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div><!-- /seventeenth picture -->
+  <!-- Modal window for the eighteenth picture -->
+  <div class="modal fade" id="vera" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close glyphicon glyphicon-remove" data-dismiss="modal"></button>
+          <h4 class="modal-title">Room Vera</h4>
+        </div>
+        <div class="modal-body">
+          <img class="img-responsive" src="img/rooms-vera.jpg" alt="room vera">
+          <p>Each of our rooms carries a grandmother's name.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div><!-- /eighteenth picture -->
+  <!-- Modal window for the nineteenth picture -->
+  <div class="modal fade" id="anica" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close glyphicon glyphicon-remove" data-dismiss="modal"></button>
+          <h4 class="modal-title">Suite Anica</h4>
+        </div>
+        <div class="modal-body">
+          <img class="img-responsive" src="img/rooms-anica.jpg" alt="suite anica">
+          <p>Each of our rooms carries a grandmother's name.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div><!-- /nineteenth picture -->
+  <!-- Modal window for the twentieth picture -->
+  <div class="modal fade" id="alexandra" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close glyphicon glyphicon-remove" data-dismiss="modal"></button>
+          <h4 class="modal-title">Room Alexandra</h4>
+        </div>
+        <div class="modal-body">
+          <img class="img-responsive" src="img/rooms-alexandra.jpg" alt="room alexandra">
+          <p>Each of our rooms carries a grandmother's name.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div><!-- /twentieth picture -->
+  <!-- Modal window for the twenty first picture -->
+  <div class="modal fade" id="rooster" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close glyphicon glyphicon-remove" data-dismiss="modal"></button>
+          <h4 class="modal-title">Free Range</h4>
+        </div>
+        <div class="modal-body">
+          <img class="img-responsive" src="img/rooster.jpg" alt="rooster and hen">
+          <p>Our chicken are free to roam around the back yard and are fed only high-quality produce from the farm.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div><!-- /twenty first picture -->
+  <!-- Modal window for the twenty second picture -->
+  <div class="modal fade" id="porch" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close glyphicon glyphicon-remove" data-dismiss="modal"></button>
+          <h4 class="modal-title">Screened Porch</h4>
+        </div>
+        <div class="modal-body">
+          <img class="img-responsive" src="img/screened-porch.jpg" alt="porch">
+          <p>A cool, quiet place to enjoy coffee or tea &amp; snacks, or to just relax with a book.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div><!-- /twenty second picture -->
+  <!-- Modal window for the twenty third picture -->
+  <div class="modal fade" id="vegetables" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close glyphicon glyphicon-remove" data-dismiss="modal"></button>
+          <h4 class="modal-title">Veggies</h4>
+        </div>
+        <div class="modal-body">
+          <img class="img-responsive" src="img/vegetables.jpg" alt="vegetables in a basket">
+          <p>Just a sample of the tasty veggies we grow on the farm!</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div><!-- /twenty third picture -->
+  <!-- Modal window for the twenty fourth picture -->
+  <div class="modal fade" id="wheel" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close glyphicon glyphicon-remove" data-dismiss="modal"></button>
+          <h4 class="modal-title" id="wheelLabel">Wagon Wheel Decoration</h4>
+        </div>
+        <div class="modal-body">
+          <img class="img-responsive" src="img/wagon-wheel.jpg" alt="wagon wheel">
+          <p>Old parts of tools and vehicles can turn into wonderful rustic decorations.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div><!-- /twenty fourth picture -->
+
+  <!-- Code to initialize the Isotope plugin -->
+  <script>
+    $(document).ready(function() {
+      //initializes Isotope and assigns the selector for the filtering
+      var $grid = $("#pictures").isotope({
+        itemSelector: '.item'
+      });
+      // bind filter button click
+      $(".galleryFilter").on("click", "button", function() {
+        var filterValue = $(this).attr("data-filter");
+        $grid.isotope({
+          filter: filterValue
+        });
+      });
+      // change is-active class on buttons
+      $(".galleryFilter a").click(function() {
+        $("galleryFilter .is-active").toggleClass("is-active");
+      });
+    });
+  </script>
+</body>
+
+</html>

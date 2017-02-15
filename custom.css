@@ -1,0 +1,532 @@
+/**
+Common and shared styles 
+**/
+
+/* general styles */
+.main,
+.coming-soon,
+.book,
+.gallery,
+.about {
+    margin: 0;
+    padding: 0;
+}
+
+.row {
+    margin: 0;
+}
+
+.btn {
+    background-color: #a978bc;
+    color: #efefef;
+    font-family: 'Indie Flower', cursive;
+    font-size: 1.3em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+/*common typography */
+.book p,
+.book label,
+.gallery p,
+.about p,
+.about ul {
+    font-size: 16px;
+    color: #5c2e5c;
+    font-family: "Lato", sans-serif;
+}
+
+.book h1,
+.about h1,
+.gallery h1 {
+    color: #a978bc;
+    font-family: "Lato", sans-serif;
+    margin-bottom: 0.7em;
+}
+
+h2 {
+    color: #245021;
+    font-family: "Lato", sans-serif;
+    font-weight: 100;
+}
+
+/*common navbar styles */
+.navbar-default .navbar-nav>li>a {
+    color: #5c2e5c;
+    font-size: 18px;
+    font-weight: 100;
+}
+
+.navbar-default .navbar-brand {
+    font-family: 'Indie Flower', cursive;
+    color: #a978bc;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.navbar-default .navbar-brand span {
+    color: #245021;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover {
+    color: #efefef;
+    background-color: #cfbde2;
+}
+
+.book .navbar,
+.gallery .navbar,
+.about .navbar {
+    background-color: #efefef;
+}
+
+/*footer styles */
+.footer {
+    background-color: #cfbde2;
+    text-align: left;
+    padding: 2em;
+    margin-top: 1.2em;
+}
+.footer .footer-left,
+.footer .footer-middle,
+.footer .footer-right {
+    vertical-align: top;
+}
+
+/* footer - left column */
+.footer h3 {
+    font-family: 'Indie Flower', cursive;
+    color: #a978bc;
+    font-size: 36px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.footer h3 span {
+    color: #245021;
+}
+
+.footer .footer-links {
+    color: #efefef;
+    margin: 20px 0 12px;
+    padding: 0;
+}
+
+.footer .footer-links a {
+    display: inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer .footer-left i {
+    font-size: 8px;
+    color: #245021;
+}
+
+.footer .footer-company-name {
+    color: #245021;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+}
+
+/* footer middle column */
+.footer .footer-middle i {
+    background-color: #245021;
+    color: #efefef;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    line-height: 42px;
+    margin: 10px 15px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.footer .footer-middle i.fa-envelope {
+    font-size: 17px;
+    line-height: 38px;
+}
+.footer .footer-middle p {
+    display: inline-block;
+    color: #efefef;
+    vertical-align: middle;
+    margin: 0;
+}
+
+.footer .footer-middle p span {
+    display: block;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 2;
+}
+
+.footer .footer-middle p a {
+    color: #5c2e5c;
+    text-decoration: none;
+}
+
+/* footer right column */
+.footer .footer-company-about {
+    line-height: 20px;
+    color: #5c2e5c;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.footer .footer-company-about span {
+    display: block;
+    color: #efefef;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer .footer-icons {
+    margin-top: 25px;
+}
+
+.footer .footer-icons a {
+    display: inline-block;
+    font-size: 32px;
+    color: #245021;
+    text-align: center;
+    line-height: 32px;
+    margin-right: 3px;
+    margin-bottom: 5px;
+}
+
+/* styles common to the homepage and the coming soon page */
+.main .navbar,
+.coming-soon .navbar {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.main .navbar-default .navbar-brand span,
+.coming-soon .navbar-default .navbar-brand span {
+    color: #efefef;
+}
+.main h1,
+.coming-soon h1 {
+    padding-top: 10%;
+    font: bolder 3em 'Indie Flower', cursive;
+}
+.main .subheading,
+.coming-soon .subheading {
+    padding: 1em;
+    margin-bottom: 1em;
+    font: 1.5em "Lato", sans-serif;
+}
+.main .social-icons,
+.coming-soon .social-icons {
+    margin-top: 1.8em;
+    margin-bottom: 1.8em;
+}
+.main .social-icons i,
+.coming-soon .social-icons i {
+    display: inline-block;
+    color: #efefef;
+    font-size: 28px;
+    padding: 1em;
+}
+.main .contacts i,
+.coming-soon .contacts i {
+    background-color: rgba(0, 0, 0, 0.12);
+    color: #a978bc;
+    font-size: 24px;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: solid 1px #efefef;
+    line-height: 34px;
+    text-align: center;
+    vertical-align: middle;
+}
+.main .contacts i.fa-envelope,
+.coming-soon .contacts i.fa-envelope {
+    font-size: 18px;
+}
+.main .contacts p,
+.coming-soon .contacts p {
+    display: inline-block;
+    color: #efefef;
+    vertical-align: middle;
+    margin: 1.7em 0;
+}
+.main .contacts p span,
+.coming-soon .contacts p span {
+    display: block;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 2;
+}
+.main .contacts p a,
+.coming-soon .contacts p a {
+    color: #efefef;
+    text-decoration: none;
+}
+
+/***
+Homepage styles
+ ***/
+.main .background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -100;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.main #bg-vid {
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.main .content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.4);
+    text-align: center;
+}
+
+.main h1,
+.main p,
+.main legend,
+.main label,
+.main .navbar-default .navbar-nav>li>a {
+    color: #efefef;
+}
+
+.main input {
+    font-family: "Lato", sans-serif;
+    color: #5C755E;
+    font-weight: 100;
+    border: 1px solid #efefef;
+    border-radius: 1%;
+    padding: 5px;
+}
+
+.main .form-control {
+    max-width: 90%;
+    background-color: rgba(0, 0, 0, 0.12);
+    font-family: 'Indie Flower', cursive;
+    font-size: 1.5em;
+    border-radius: 4px;
+    padding: 6px 12px;
+    line-height: 1.4em;
+    color: #cfbde2;
+    text-align: center;
+}
+
+.main label,
+.main input {
+    margin-right: 0.4em;
+    font-weight: normal;
+}
+
+/***
+Coming soon styles
+***/
+.coming-soon {
+    background: url("video-cover.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.coming-soon .page {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+}
+
+.coming-soon h1,
+.coming-soon p,
+.coming-soon .navbar-default .navbar-nav>li>a {
+    color: #efefef;
+}
+
+.coming-soon h1 {
+    padding-top: 10%;
+}
+
+/***
+Booking page styles 
+***/
+.book .reservations {
+    padding-top: 3em;
+}
+
+.book .heading {
+    color: #5C755E;
+}
+
+/* form styles */
+.form-group button {
+    margin-top: 10px;
+}
+
+form .col-lg-2,
+form .col-md-2,
+form .col-lg-10,
+form .col-md-10,
+form .col-lg-5,
+form .col-md-5 {
+    padding: 10px 0;
+    margin: 0;
+}
+
+#clientEmail {
+    max-width: 98%;
+}
+form .error {
+  color: #c10000;
+  font-weight: 100;
+}
+
+/***
+About page styles
+***/
+.about main {
+    padding-top: 3em;
+}
+
+.about .thumbnail {
+    background-color: #cfbde2;
+    margin-top: 0.7em;
+}
+
+.about h4 {
+    font-family: 'Indie Flower', cursive;
+    color: #efefef;
+    font-weight: bolder;
+}
+
+.about .modal-title {
+    color: #5c2e5c;
+}
+
+.about li {
+    list-style: none;
+}
+
+.about li span {
+    color: #5C755E;
+    font-weight: bolder;
+}
+
+/***
+Styles for the gallery
+***/
+
+.gallery main {
+    padding-top: 3em;
+}
+
+.gallery h4 {
+    font-family: 'Indie Flower', cursive;
+    color: #5c2e5c;
+    font-weight: bolder;
+}
+
+.gallery .btn {
+    background-color: #5C755E;
+}
+
+.gallery .item {
+    padding: 1em;
+}
+
+.gallery .img-thumbnail {
+    background-color: #cfbde2;
+}
+
+/*media query for smaller screens */
+@media screen and (max-width: 790px) {
+  /* video on the homepage will be replaced with cover image in order not to overload mobile bandwith; other styles for the homepage and coming soon page are adjusted accordingly*/
+    .main {
+        background: url("video-cover.jpg") #5c2e5c no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+    #bg-vid {
+        display: none;
+    }
+    .main .navbar,
+    .coming-soon .navbar {
+        background-color: #efefef;
+    }
+    .main .navbar-default .navbar-nav>li>a,
+    .coming-soon .navbar-default .navbar-nav>li>a {
+        color: #5c2e5c;
+        font-size: 1em;
+        font-weight: 100;
+    }
+    .main .navbar-default .navbar-brand {
+        font-family: 'Indie Flower', cursive;
+        color: #a978bc;
+        font-weight: 700;
+    }
+    .main .navbar-default .navbar-brand span,
+    .coming-soon .navbar-default .navbar-brand span {
+        color: #245021;
+        font-size: 2em;
+        font-weight: 700;
+    }
+    .main .content,
+    .coming-soon .page {
+        background: rgba(0, 0, 0, 0.7);
+        overflow: scroll;
+    }
+    /* make sure that the footer elements align in the center */
+    .footer .footer-left,
+    .footer .footer-middle,
+    .footer- .footer-right {
+        display: block;
+        width: 100%;
+        margin-bottom: 1em;
+        text-align: center;
+    }
+    .footer .footer-company-about,
+    .footer .footer-company-about span,
+    .footer .footer-icons,
+    .footer .footer-icons a {
+        text-align: center;
+    }
+}
+
+/*media query for larger screens */
+@media screen and (min-width: 755px) {
+    /*keep the form from spreading too much on the larger screens & align it in the center of the page */
+    .book form {
+        width: 750px;
+        margin: 0 auto;
+    }
+    /* increase the size of the modal windows for bigger screens */
+    .gallery .modal-dialog {
+        width: 60%;
+    }
+}
